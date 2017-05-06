@@ -103,7 +103,7 @@ SetHackEnabled(name, bool); -- Enables or Disables the specified
 
 ## Enums
 
-### Hacks
+### Hacks (todo)
 Depending on the licence for the currently authenticated user you will get one of the following lists for hacks:
 
 #### Lite
@@ -118,5 +118,63 @@ Hacks = {
 Hacks = {
   AntiAFK = "Anti-AFK",
   StopFall = "Stop Fall"
+}
+```
+
+### ObjectTypes
+
+```lua
+ObjectType = { 
+  Object = 0, 
+  Item = 1, 
+  Container = 2, 
+  Unit = 3, 
+  Player = 4, 
+  GameObject = 5, 
+  DynamicObject = 6, 
+  Corpse = 7, 
+  AreaTrigger = 8, 
+  SceneObject = 9, 
+  Conversation = 10
+}
+```
+
+### MemoryType
+
+```lua
+MemoryType = {
+  Bool = 0,
+  Char = 1,
+  Byte = 2,
+  Short = 3,
+  UShort = 4,
+  Int = 5,
+  UInt = 6,
+  Long = 7,
+  ULong = 8,
+  Float = 9,
+  Double = 10,
+  String = 11,
+  IntPtr = 12,
+  UIntPtr = 13,
+  GUID = 14
+}
+```
+
+### HitFlags
+
+```lua
+HitFlags = {
+  DoodadCollision = 0x1,
+  DoodadRender = 0x2,
+  WmoCollision = 0x10,
+  WmoRender = 0x20,
+  Terrain = 0x100,
+  Liquid = 0x20000,
+  Cull = 0x80000,
+  EntityCollision = 0x100000,
+  EntityRender = 0x200000,
+  LineOfSight = 0x100111,
+  SpellLoS = 0x100010 
 }
 ```
