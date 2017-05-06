@@ -54,4 +54,14 @@ MoveTo(X, Y, Z); -- Uses ClickToMove to move the player to the specified coordin
 
 ## Miscellaneous 
 
+### Toolkit_GetVersion
+```lua
+-- Return value: String
+Toolkit_GetVersion(); -- Returns the current wToolkit version
+
+-- Available Aliases:
+GetFireHackVersion();
+GetToolkitVersion();
+```
+
 ## Interface
