@@ -62,8 +62,51 @@ MoveTo(X, Y, Z); -- Uses ClickToMove to move the player to the specified coordin
 
 
 ## File 
+### GetDirectoryFiles
+```lua
+-- Return value: String[]
+-- Argument 1: Path of directory (String) Note: Directory path should be formatted like "C:\\GameHackingTools\\"
+GetDirectoryFiles(path); -- Returns the file path to each file found in the specified directory.
+```
 
+### GetSubdirectories
+```lua
+-- Return value: String[]
+-- Argument 1: Path of directory (String) Note: Directory path should be formatted like "C:\\GameHackingTools\\"
+GetSubdirectories(path); -- Returns the path to each subdirectory found in the specified directory.
+```
 
+### ReadFile
+```lua
+-- Return value: String
+-- Argument 1: Path of file to read (String)
+ReadFile(path); -- Returns the entire contents of the specified file.
+```
+
+### WriteFile
+```lua
+-- Return value: Null
+-- Argument 1: Path of file to write (String)
+-- Argument 2: The content write (String)
+-- Argument 3: OPTIONAL: Whether to append rather than overwrite (Boolean)
+WriteFile(path, content[, append]); -- Writes the file content to the specified file.
+```
+
+### Toolkit_GetDirectory
+```lua
+-- Return value: String
+Toolkit_GetDirectory(); -- Returns the GameHackingTools Launcher directory.
+
+-- Available Aliases:
+GetFireHackDirectory();
+GetToolkitDirectory();
+```
+
+### GetWoWDirectory
+```lua
+-- Return value: String
+GetWoWDirectory(); -- Returns the game client directory.
+```
 
 ## Scripts 
 
