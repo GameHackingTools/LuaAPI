@@ -4,6 +4,7 @@ The aim on the github page is to give you an easy to understand documentation of
 If there is a function you would like adding please submit a Feature Request [on our community forum](https://gamehacking.tools/community/forum/9-requests/)
 
 
+
 ## Active Player
 ### StopFalling ![PremiumOnly](https://gamehacking.tools/api/premiumbadge.jpg)
 ```lua
@@ -38,21 +39,39 @@ FaceDirection(radians); -- Sets the player rotation to the specified radian. Man
 MoveTo(X, Y, Z); -- Uses ClickToMove to move the player to the specified coordinates
 ```
 
+
+
 ## Object 
+
+
 
 ## Object Manager
 
+
+
 ## Unit 
+
+
 
 ## World 
 
+
+
 ## Hacks 
+
+
 
 ## File 
 
+
+
 ## Scripts 
 
+
+
 ## Miscellaneous 
+
+
 
 ### Toolkit_GetVersion
 ```lua
@@ -99,7 +118,11 @@ SetHackEnabled(name, bool); -- Enables or Disables the specified
 ```
 
 
+
 ## Interface
+We do not currently have a public API for our interface
+
+
 
 ## Enums
 
