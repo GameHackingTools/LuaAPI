@@ -50,15 +50,50 @@ MoveTo(X, Y, Z); -- Uses ClickToMove to move the player to the specified coordin
 
 
 ## Unit 
-
+We do not currently have a public API this section
 
 
 ## World 
+### TraceLine
+```lua
+-- Return value: The X, Y, and Z coordinates of the hit position, or nil, nil, nil if nothing was hit 
+-- Argument 1: The starting X coordinat (float)
+-- Argument 2: The starting Y coordinate (float)
+-- Argument 3: The starting Z coordinate (float)
+-- Argument 4: The ending X coordinate (float)
+-- Argument 5: The ending Y coordinate (float)
+-- Argument 6: The ending Z coordinate (float)
+-- Argument 7: One or more members of the HitFlags table combined with bit.bor
+TraceLine(StartX, StartY, StartZ, EndX, EndY, EndZ, Flags); -- Perform a raycast between two positions.
 
+-- Available Aliases:
+Traceline();
+WorldFrame_Intersect();
+Raycast();
+```
+
+### GetCameraPosition
+```lua
+-- Return value: The X, Y, and Z coordinates of the camera
+GetCameraPosition(); -- Get the camera position.
+```
 
 
 ## Hacks 
+### IsHackEnabled
+```lua
+-- Return value: Int
+-- Argument 1: The name of the hack you wish to check the enabled status for (String)
+IsHackEnabled(name); -- Returns 1 if the specified hack is enabled.
+```
 
+### SetHackEnabled
+```lua
+-- Return value: Null
+-- Argument 1: The name of the hack you wish to check the enabled status for (String)
+-- Argument 2: True/False(Boolean)
+SetHackEnabled(name, bool); -- Enables or Disables the specified
+```
 
 
 ## File 
@@ -109,13 +144,10 @@ GetWoWDirectory(); -- Returns the game client directory.
 ```
 
 ## Scripts 
-
+We do not currently have a public API this section
 
 
 ## Miscellaneous 
-
-
-
 ### Toolkit_GetVersion
 ```lua
 -- Return value: String
@@ -145,25 +177,9 @@ OpenURL(url); -- Opens a webpage using the defaut browser.
 IsForeground(); -- Returns 1 if the game client is the foremost window.
 ```
 
-### IsHackEnabled
-```lua
--- Return value: Int
--- Argument 1: The name of the hack you wish to check the enabled status for (String)
-IsHackEnabled(name); -- Returns 1 if the specified hack is enabled.
-```
-
-### SetHackEnabled
-```lua
--- Return value: Null
--- Argument 1: The name of the hack you wish to check the enabled status for (String)
--- Argument 2: True/False(Boolean)
-SetHackEnabled(name, bool); -- Enables or Disables the specified
-```
-
-
 
 ## Interface
-We do not currently have a public API for our interface
+We do not currently have a public API this section
 
 
 
