@@ -106,7 +106,7 @@ SetHackEnabled(name, bool); -- Enables or Disables the specified
 ### Hacks
 Depending on the licence for the currently authenticated user you will get one of the following lists for hacks:
 
-#### Lite:
+#### Lite
 ```lua
 Hacks = {
   AntiAFK = "Anti-AFK"
