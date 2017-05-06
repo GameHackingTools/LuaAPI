@@ -76,7 +76,156 @@ CurrentTarget();
 
 ----------------------------------------------------
 ## Object 
+### ObjectName
+```lua
+-- Return value: String
+-- Argument 1: The Object
+ObjectName(object); --  Get the objects name from the Object Manager
+```
 
+### ObjectGUID
+```lua
+-- Return value: String
+-- Argument 1: The Object
+ObjectGUID(object); --  Get the objects GUID from the Object Manager
+```
+
+### ObjectScale
+```lua
+-- Return value: Int
+-- Argument 1: The Object
+ObjectScale(object); --  Get the objects scale
+```
+
+### ObjectExists
+```lua
+-- Return value: Int
+-- Argument 1: The Object
+ObjectExists(object); --  Returns 1 if the specified objects still exists in the Object Manager
+```
+
+### ObjectPosition
+```lua
+-- Return value: X,Y,Z (float)
+-- Argument 1: The Object
+ObjectPosition(object); --  Returns the in game coordinates for the specifed object.
+```
+
+### ObjectFacing
+```lua
+-- Return value: float
+-- Argument 1: The Object
+ObjectFacing(object); --  Returns the direction the object is facing
+```
+
+### ObjectTypeFlags
+```lua
+-- Return value: Int (ObjectType)
+-- Argument 1: The Object
+ObjectTypeFlags(object); --  Returns the type of the object
+```
+
+### ObjectTypeMask
+```lua
+-- Return value: Int 
+-- Argument 1: The Object
+ObjectTypeMask(object); --  Returns the typemask of the object
+```
+
+### ObjectInteract
+```lua
+-- Return value: Null 
+-- Argument 1: The Object
+ObjectInteract(object); --  Interacts the the specifed object
+
+-- Available Aliases:
+ObjectRightClick();
+InteractWith();
+```
+
+### GetDistanceBetweenObjects
+```lua
+-- Return value: Float 
+-- Argument 1: Object A
+-- Argument 2: Object B
+GetDistanceBetweenObjects(objectA, objectB); --  Returns the 3D distance between the specified objects
+```
+
+### GetAnglesBetweenObjects
+```lua
+-- Return value: Float 
+-- Argument 1: Object A
+-- Argument 2: Object B
+GetAnglesBetweenObjects(objectA, objectB); --  Returns the angle between the specified objects
+
+-- Available Aliases:
+GetAngleBetweenObjects();
+```
+
+### GetPositionBetweenObjects
+```lua
+-- Return value: X,Y,Z (float) 
+-- Argument 1: Object A
+-- Argument 2: Object B
+-- Argument 3: Distance away from Object B
+GetPositionBetweenObjects(objectA, objectB, dist); --  Returns X,Y,Z coordinates that are the specified distance away from Object B
+```
+
+### ObjectIsFacing
+```lua
+-- Return value: Int 
+-- Argument 1: Object A
+-- Argument 2: Object B
+-- Argument 3: OPTIONAL: The margin of error for facing(float)
+ObjectIsFacing(objectA, objectB[, marginOfError]); --  Get whether an object is facing another.
+```
+
+### ObjectIsBehind
+```lua
+-- Return value: Int 
+-- Argument 1: Object A
+-- Argument 2: Object B
+-- Argument 3: OPTIONAL: The margin of error for facing(float)
+ObjectIsBehind(objectA, objectB[, marginOfError]); --  Get whether an object is behind another.
+```
+
+### ObjectIsInfront
+```lua
+-- Return value: Int 
+-- Argument 1: Object A
+-- Argument 2: Object B
+-- Argument 3: OPTIONAL: The margin of error for facing(float)
+ObjectIsInfront(objectA, objectB[, marginOfError]); --  Get whether an object is infront of another.
+```
+
+### ObjectIsType
+```lua
+-- Return value: Int 
+-- Argument 1: Object
+-- Argument 2: ObjectType
+ObjectIsType(object, objectType); --  Returns 1 if the object if the specified type
+```
+
+### ObjectField
+```lua
+-- Return value: As Specified 
+-- Argument 1: Object
+-- Argument 2: Offset to read (Int)
+-- Argument 2: MemoryType
+ObjectField(object, offset, memoryType); --  Returns the value at the specifed memory
+
+-- Available Aliases:
+ObjectMemory();
+```
+
+### ObjectDescriptor
+```lua
+-- Return value: As Specified 
+-- Argument 1: Object
+-- Argument 2: Descriptor to read (Int)
+-- Argument 2: MemoryType
+ObjectDescriptor(object, offset, memoryType); --  Returns the value at the specifed descriptor
+```
 
 ----------------------------------------------------
 ## Unit 
