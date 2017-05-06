@@ -121,7 +121,7 @@ Hacks = {
 }
 ```
 
-### ObjectTypes
+### ObjectType
 
 ```lua
 ObjectType = { 
