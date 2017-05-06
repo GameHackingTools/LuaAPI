@@ -5,7 +5,7 @@ If there is a function you would like adding please submit a Feature Request [on
 
 
 ## Active Player
-### StopFalling
+### StopFalling ![PremiumOnly](https://gamehacking.tools/api/premiumbadge.jpg)
 ```lua
 StopFalling();
 ```
