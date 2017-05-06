@@ -4,22 +4,26 @@ The aim on the github page is to give you an easy to understand documentation of
 If there is a function you would like adding please submit a Feature Request [on our community forum](https://gamehacking.tools/community/forum/9-requests/)
 
 
-# Active Player
+## Active Player
+###StopFalling
+```lua
+StopFalling();
+```
 
 ## Object 
 
-### Object Manager
+## Object Manager
 
-#Unit 
+## Unit 
 
-#World 
+## World 
 
-#Hacks 
+## Hacks 
 
-#File 
+## File 
 
-#Scripts 
+## Scripts 
 
-#Miscellaneous 
+## Miscellaneous 
 
-#Interface
+## Interface
