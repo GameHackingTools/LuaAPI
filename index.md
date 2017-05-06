@@ -64,4 +64,58 @@ GetFireHackVersion();
 GetToolkitVersion();
 ```
 
+### TerminateClient
+```lua
+-- Return value: None - Won't return
+TerminateClient(); -- Kills the game process
+```
+
+### OpenURL
+```lua
+-- Return value: Null
+-- Argument 1: The URL you would like to open (String)
+OpenURL(url); -- Opens a webpage using the defaut browser.
+```
+
+### IsForeground
+```lua
+-- Return value: Int
+IsForeground(); -- Returns 1 if the game client is the foremost window.
+```
+
+### IsHackEnabled
+```lua
+-- Return value: Int
+-- Argument 1: The name of the hack you wish to check the enabled status for (String)
+IsHackEnabled(name); -- Returns 1 if the specified hack is enabled.
+```
+
+### SetHackEnabled
+```lua
+-- Return value: Null
+-- Argument 1: The name of the hack you wish to check the enabled status for (String)
+-- Argument 2: True/False(Boolean)
+SetHackEnabled(name, bool); -- Enables or Disables the specified
+```
+
+
 ## Interface
+
+## Enums
+
+### Hacks
+Depending on the licence for the currently authenticated user you will get one of two lists:
+
+```lua
+Hacks = {
+  AntiAFK = "Anti-AFK"
+}
+```
+
+
+```lua
+Hacks = {
+  AntiAFK = "Anti-AFK",
+  StopFall = "Stop Fall"
+}
+```
