@@ -112,7 +112,7 @@ Hacks = {
 }
 ```
 
-
+![PremiumOnly](https://gamehacking.tools/api/premiumbadge.jpg)
 ```lua
 Hacks = {
   AntiAFK = "Anti-AFK",
