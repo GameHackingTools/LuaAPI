@@ -8,13 +8,36 @@ If there is a function you would like adding please submit a Feature Request [on
 ### StopFalling ![PremiumOnly](https://gamehacking.tools/api/premiumbadge.jpg)
 ```lua
 -- Return value: Null
-StopFalling(); -- Instantly stops the player falling, Fall damage is calculates as if you landed on a hard surface.
+StopFalling(); -- Instantly stops the player falling, Fall damage is calculated as if you landed on a hard surface.
 ```
-### GetMaximumClimbAngle
+### GetMaximumClimbAngle ![PremiumOnly](https://gamehacking.tools/api/premiumbadge.jpg)
 ```lua
 -- Return value: Int
 GetMaximumClimbAngle(); -- Returns the maximum angle(in degrees) the player can walk up.
 ```
+
+### SendMovementUpdate ![PremiumOnly](https://gamehacking.tools/api/premiumbadge.jpg)
+```lua
+-- Return value: Null
+SendMovementUpdate(); -- Send a Heartbeat packet to the server. This is useful to update player rotation.
+```
+
+### FaceDirection
+```lua
+-- Return value: Null
+-- Argument 1: Radian value of the direction to face
+FaceDirection(radians); -- Sets the player rotation to the specified radian. Manual movement or SendMovementUpdate() is required to notify the server of this change.
+```
+
+### MoveTo
+```lua
+-- Return value: Null
+-- Argument 1: X Coordinate (float)
+-- Argument 2: Y Coordinate (float)
+-- Argument 3: Z Coordinate (float)
+MoveTo(X, Y, Z); -- Uses ClickToMove to move the player to the specified coordinates
+```
+
 ## Object 
 
 ## Object Manager
