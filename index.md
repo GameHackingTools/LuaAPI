@@ -7,9 +7,14 @@ If there is a function you would like adding please submit a Feature Request [on
 ## Active Player
 ### StopFalling ![PremiumOnly](https://gamehacking.tools/api/premiumbadge.jpg)
 ```lua
+-- Return value: Null
 StopFalling(); -- Instantly stops the player falling, Fall damage is calculates as if you landed on a hard surface.
 ```
-
+### GetMaximumClimbAngle
+```lua
+-- Return value: Int
+GetMaximumClimbAngle(); -- Returns the maximum angle(in degrees) the player can walk up.
+```
 ## Object 
 
 ## Object Manager
