@@ -104,15 +104,16 @@ SetHackEnabled(name, bool); -- Enables or Disables the specified
 ## Enums
 
 ### Hacks
-Depending on the licence for the currently authenticated user you will get one of two lists:
+Depending on the licence for the currently authenticated user you will get one of the following lists for hacks:
 
+#### Lite:
 ```lua
 Hacks = {
   AntiAFK = "Anti-AFK"
 }
 ```
 
-![PremiumOnly](https://gamehacking.tools/api/premiumbadge.jpg)
+#### Premium ![PremiumOnly](https://gamehacking.tools/api/premiumbadge.jpg)
 ```lua
 Hacks = {
   AntiAFK = "Anti-AFK",
