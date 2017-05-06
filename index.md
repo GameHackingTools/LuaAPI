@@ -7,7 +7,7 @@ If there is a function you would like adding please submit a Feature Request [on
 ## Active Player
 ### StopFalling ![PremiumOnly](https://gamehacking.tools/api/premiumbadge.jpg)
 ```lua
-StopFalling(); ---Instantly stops the player falling, Fall damage is calculates as if you landed on a hard surface.
+StopFalling(); -- Instantly stops the player falling, Fall damage is calculates as if you landed on a hard surface.
 ```
 
 ## Object 
