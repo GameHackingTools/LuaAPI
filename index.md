@@ -46,7 +46,21 @@ MoveTo(X, Y, Z); -- Uses ClickToMove to move the player to the specified coordin
 
 
 ## Object Manager
+### GetObjectCount
+```lua
+-- Return value: Int
+GetObjectCount(); -- Get the number of objects in the object manager.
+```
 
+### GetObjectWithIndex
+```lua
+-- Return value: The Object
+-- Argument 1: Object Index (Int)
+GetObjectWithIndex(index); -- Get an object in the object manager from using its index
+
+-- Available Aliases:
+GetObjectFromIndex();
+```
 
 
 ## Unit 
