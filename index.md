@@ -4,7 +4,7 @@ The aim on the github page is to give you an easy to understand documentation of
 If there is a function you would like adding please submit a Feature Request [on our community forum](https://gamehacking.tools/community/forum/9-requests/)
 
 
-
+----------------------------------------------------
 ## Active Player
 ### StopFalling ![PremiumOnly](https://gamehacking.tools/api/premiumbadge.jpg)
 ```lua
@@ -30,21 +30,14 @@ SendMovementUpdate(); -- Send a Heartbeat packet to the server. This is useful t
 FaceDirection(radians); -- Sets the player rotation to the specified radian. Manual movement or SendMovementUpdate() is required to notify the server of this change.
 ```
 
-### MoveTo
+### FaceDirection
 ```lua
 -- Return value: Null
--- Argument 1: X Coordinate (float)
--- Argument 2: Y Coordinate (float)
--- Argument 3: Z Coordinate (float)
-MoveTo(X, Y, Z); -- Uses ClickToMove to move the player to the specified coordinates
+-- Argument 1: Radian value of the direction to face
+FaceDirection(radians); -- Sets the player rotation to the specified radian. Manual movement or SendMovementUpdate() is required to notify the server of this change.
 ```
 
-
-
-## Object 
-
-
-
+----------------------------------------------------
 ## Object Manager
 ### GetObjectCount
 ```lua
@@ -62,11 +55,34 @@ GetObjectWithIndex(index); -- Get an object in the object manager from using its
 GetObjectFromIndex();
 ```
 
+### GetLocalPlayer
+```lua
+-- Return value: The Player Object
+GetLocalPlayer(); --  Get the player to use used with object manager functions
 
+-- Available Aliases:
+CurrentPlayer();
+```
+
+### GetLocalTarget
+```lua
+-- Return value: The Target Object
+GetLocalTarget(); --  Get the players target as an object to use used with object manager functions
+
+-- Available Aliases:
+PlayerTarget();
+CurrentTarget();
+```
+
+----------------------------------------------------
+## Object 
+
+
+----------------------------------------------------
 ## Unit 
 We do not currently have a public API this section
 
-
+----------------------------------------------------
 ## World 
 ### TraceLine
 ```lua
@@ -92,7 +108,7 @@ Raycast();
 GetCameraPosition(); -- Get the camera position.
 ```
 
-
+----------------------------------------------------
 ## Hacks 
 ### IsHackEnabled
 ```lua
@@ -109,7 +125,7 @@ IsHackEnabled(name); -- Returns 1 if the specified hack is enabled.
 SetHackEnabled(name, bool); -- Enables or Disables the specified
 ```
 
-
+----------------------------------------------------
 ## File 
 ### GetDirectoryFiles
 ```lua
@@ -156,11 +172,11 @@ GetToolkitDirectory();
 -- Return value: String
 GetWoWDirectory(); -- Returns the game client directory.
 ```
-
+----------------------------------------------------
 ## Scripts 
 We do not currently have a public API this section
 
-
+----------------------------------------------------
 ## Miscellaneous 
 ### Toolkit_GetVersion
 ```lua
@@ -191,12 +207,12 @@ OpenURL(url); -- Opens a webpage using the defaut browser.
 IsForeground(); -- Returns 1 if the game client is the foremost window.
 ```
 
-
+----------------------------------------------------
 ## Interface
 We do not currently have a public API this section
 
 
-
+----------------------------------------------------
 ## Enums
 
 ### Hacks (todo)
