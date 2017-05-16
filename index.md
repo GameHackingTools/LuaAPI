@@ -365,7 +365,7 @@ We do not currently have a public API this section
 ## Enums
 Note: You can dump all the latest version of these enums ingame when wToolkit is running with the command .dumpluafiles
 
-### Hacks (todo)
+### Hacks
 Depending on the licence for the currently authenticated user you will get one of the following lists for hacks:
 
 #### Lite
