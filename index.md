@@ -370,15 +370,79 @@ Depending on the licence for the currently authenticated user you will get one o
 #### Lite
 ```lua
 Hacks = {
-  AntiAFK = "Anti-AFK"
+  Anti-AFK = "Anti-AFK",
+  DisplayAllLevels = "Display All Levels",
+  DrunkPercent = "DrunkPercent",
+  FieldofView = "Field of View",
+  FollowAnyone = "Follow Anyone",
+  LuaUnlock = "Lua Unlock",
+  MorphDisplayId = "Morph DisplayId",
+  MorphDisplayId = "Morph DisplayId",
+  MorphGender = "Morph Gender",
+  MorphItemSlot = "Morph Item Slot",
+  MorphRace = "Morph Race"
 }
 ```
 
 #### Premium ![PremiumOnly](https://gamehacking.tools/api/premiumbadge.jpg)
 ```lua
 Hacks = {
-  AntiAFK = "Anti-AFK",
-  StopFall = "Stop Fall"
+  Airwalk = "Airwalk",
+  Anti-AFK = "Anti-AFK",
+  CollisionRenderer = "Collision Renderer",
+  DisplayAllLevels = "Display All Levels",
+  DoodadCollision = "Doodad Collision",
+  DoodadRenderer = "Doodad Renderer",
+  DrunkPercent = "DrunkPercent",
+  FacingCast = "Facing Cast",
+  FieldofView = "Field of View",
+  FollowAnyone = "Follow Anyone",
+  LiquidRenderer = "Liquid Renderer",
+  LuaUnlock = "Lua Unlock",
+  MorphDisplayId = "Morph DisplayId",
+  MorphDisplayId = "Morph DisplayId",
+  MorphGender = "Morph Gender",
+  MorphItemSlot = "Morph Item Slot",
+  MorphRace = "Morph Race",
+  MountedLoot = "Mounted Loot",
+  MovingLoot = "Moving Loot",
+  NoSwimming = "No Swimming",
+  NoKnockback = "NoKnockback",
+  ObscureTarget = "Obscure Target",
+  SpectateCollision = "Spectate Collision",
+  SpectateFreeRoam = "Spectate Free Roam",
+  SpectatePosition = "Spectate Position",
+  SpectateSpeed = "Spectate Speed",
+  TerrainCollision = "Terrain Collision",
+  TerrainRenderer = "Terrain Renderer",
+  TrackBeasts = "Track Beasts",
+  TrackByName = "Track ByName",
+  TrackCritters = "Track Critters",
+  TrackDemons = "Track Demons",
+  TrackDragons = "Track Dragons",
+  TrackElementals = "Track Elementals",
+  TrackFishing = "Track Fishing",
+  TrackGasClouds = "Track Gas Clouds",
+  TrackGiants = "Track Giants",
+  TrackHerbs = "Track Herbs",
+  TrackHumanoids = "Track Humanoids",
+  TrackInscription = "Track Inscription",
+  TrackLockpicking = "Track Lockpicking",
+  TrackMachines = "Track Machines",
+  TrackMinerals = "Track Minerals",
+  TrackNon-CombatPets = "Track Non-Combat Pets",
+  TrackOpenable = "Track Openable",
+  TrackPVPObjects = "Track PVP Objects",
+  TrackSlimes = "Track Slimes",
+  TrackTotems = "Track Totems",
+  TrackTraps = "Track Traps",
+  TrackTreasure = "Track Treasure",
+  TrackUndead = "Track Undead",
+  WallClimb = "Wall Climb",
+  WaterWalking = "Water Walking",
+  WMOCollision = "WMO Collision",
+  WMORenderer = "WMO Renderer",
+  Zoomhack = "Zoomhack"  
 }
 ```
 
