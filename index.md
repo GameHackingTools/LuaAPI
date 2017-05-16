@@ -370,7 +370,7 @@ Depending on the licence for the currently authenticated user you will get one o
 #### Lite
 ```lua
 Hacks = {
-  Anti-AFK = "Anti-AFK",
+  AntiAFK = "Anti-AFK",
   DisplayAllLevels = "Display All Levels",
   DrunkPercent = "DrunkPercent",
   FieldofView = "Field of View",
@@ -388,7 +388,7 @@ Hacks = {
 ```lua
 Hacks = {
   Airwalk = "Airwalk",
-  Anti-AFK = "Anti-AFK",
+  AntiAFK = "Anti-AFK",
   CollisionRenderer = "Collision Renderer",
   DisplayAllLevels = "Display All Levels",
   DoodadCollision = "Doodad Collision",
@@ -430,7 +430,7 @@ Hacks = {
   TrackLockpicking = "Track Lockpicking",
   TrackMachines = "Track Machines",
   TrackMinerals = "Track Minerals",
-  TrackNon-CombatPets = "Track Non-Combat Pets",
+  TrackNonCombatPets = "Track Non-Combat Pets",
   TrackOpenable = "Track Openable",
   TrackPVPObjects = "Track PVP Objects",
   TrackSlimes = "Track Slimes",
