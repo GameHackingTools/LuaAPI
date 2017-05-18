@@ -55,6 +55,20 @@ GetObjectWithIndex(index); -- Get an object in the object manager from using its
 GetObjectFromIndex();
 ```
 
+### GetObjectWithPointer
+```
+-- Return value: The Object
+-- Argument 1: Object Pointer formatted at Hex String. 0x123ABC
+GetObjectWithPointer(pointer); -- Get an object in the object manager from its pointer.
+```
+
+### GetObjectWithGUID
+```
+-- Return value: The Object
+-- Argument 1: Object GUID. Note: This only accepts the GUID from ObjectGUID! Do not use ObjectFormattedGUID for this function
+GetObjectWithGUID(guid); -- Get an object in the object manager from its GUID.
+```
+
 ### GetLocalPlayer
 ```lua
 -- Return value: The Player Object
@@ -88,6 +102,13 @@ ObjectName(object); --  Get the objects name from the Object Manager
 -- Return value: String
 -- Argument 1: The Object
 ObjectGUID(object); --  Get the objects GUID from the Object Manager
+```
+
+### ObjectFormattedGUID
+```lua
+-- Return value: String
+-- Argument 1: The Object
+ObjectFormattedGUID(object); --  Get the objects GUID from the Object Manager
 ```
 
 ### ObjectScale
