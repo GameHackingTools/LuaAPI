@@ -293,9 +293,34 @@ UnitCreator(unit); --  Gets the creator Object
 -- Return value: Boolean
 -- Argument 1: The Unit
 UnitCanBeLooted(unit); --  Returns if the Unit can be looted
+
+-- Available Aliases:
+UnitIsLootable()
 ```
 
+### UnitCanBeSkinned
+```lua
+-- Return value: Boolean
+-- Argument 1: The Unit
+UnitCanBeSkinned(unit); --  Returns if the Unit can be skinned
 
+-- Available Aliases:
+UnitIsSkinnable()
+```
+
+### UnitSetDisplayID
+```lua
+-- Return value: Boolean
+-- Argument 1: The Unit
+-- Argument 2: The display ID (Int)
+UnitSetDisplayID(unit, id); --  Returns a boolean that specifies if the ID was set or not. UnitUpdateModule must be called for the change to be displayed.
+```
+
+### UnitUpdateModel
+```lua
+-- Argument 1: The Unit
+UnitUpdateModel(unit); --  Refreshes the model drawn for the supplied Unit. Call this after UnitSetDisplayID()
+```
 
 ----------------------------------------------------
 ## World 
