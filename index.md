@@ -56,14 +56,14 @@ GetObjectFromIndex();
 ```
 
 ### GetObjectWithPointer
-```
+```lua
 -- Return value: The Object
 -- Argument 1: Object Pointer formatted at Hex String. 0x123ABC
 GetObjectWithPointer(pointer); -- Get an object in the object manager from its pointer.
 ```
 
 ### GetObjectWithGUID
-```
+```lua
 -- Return value: The Object
 -- Argument 1: Object GUID. Note: This only accepts the GUID from ObjectGUID! Do not use ObjectFormattedGUID for this function
 GetObjectWithGUID(guid); -- Get an object in the object manager from its GUID.
@@ -253,7 +253,33 @@ ObjectDescriptor(object, offset, memoryType); --  Returns the value at the speci
 
 ----------------------------------------------------
 ## Unit 
-We do not currently have a public API this section
+### UnitMovementFlags
+```lua
+-- Return value: Int 
+-- Argument 1: The Unit
+UnitMovementFlags(unit); --  Gets the units movement flags
+```
+
+### UnitBoundingRadius
+```lua
+-- Return value: Int 
+-- Argument 1: The Unit
+UnitBoundingRadius(unit); --  Gets the units bounding radius
+```
+
+### UnitCombatReach
+```lua
+-- Return value: Int 
+-- Argument 1: The Unit
+UnitCombatReach(unit); --  Gets the units combat reach
+```
+
+### UnitTarget
+```lua
+-- Return value: The target Object 
+-- Argument 1: The Unit
+UnitTarget(unit); --  The Target Object
+```
 
 ----------------------------------------------------
 ## World 
