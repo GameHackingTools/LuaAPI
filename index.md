@@ -276,10 +276,26 @@ UnitCombatReach(unit); --  Gets the units combat reach
 
 ### UnitTarget
 ```lua
--- Return value: The target Object 
+-- Return value: The target Object or nil if there is none
 -- Argument 1: The Unit
-UnitTarget(unit); --  The Target Object
+UnitTarget(unit); --  Gets the Target Object
 ```
+
+### UnitCreator
+```lua
+-- Return value: The creator Object or nil if there is none
+-- Argument 1: The Unit
+UnitCreator(unit); --  Gets the creator Object
+```
+
+### UnitCanBeLooted
+```lua
+-- Return value: Boolean
+-- Argument 1: The Unit
+UnitCanBeLooted(unit); --  Returns if the Unit can be looted
+```
+
+
 
 ----------------------------------------------------
 ## World 
