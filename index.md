@@ -120,9 +120,9 @@ ObjectScale(object); --  Get the objects scale
 
 ### ObjectExists
 ```lua
--- Return value: Int
+-- Return value: Boolean
 -- Argument 1: The Object
-ObjectExists(object); --  Returns 1 if the specified objects still exists in the Object Manager
+ObjectExists(object); --  Returns true if the specified objects still exists in the Object Manager
 ```
 
 ### ObjectPosition
@@ -194,7 +194,7 @@ GetPositionBetweenObjects(objectA, objectB, dist); --  Returns X,Y,Z coordinates
 
 ### ObjectIsFacing
 ```lua
--- Return value: Int 
+-- Return value: Boolean 
 -- Argument 1: Object A
 -- Argument 2: Object B
 -- Argument 3: OPTIONAL: The margin of error for facing(float). Default value: 3 radians
@@ -206,7 +206,7 @@ UnitIsFacing()
 
 ### ObjectIsBehind
 ```lua
--- Return value: Int 
+-- Return value: Boolean 
 -- Argument 1: Object A
 -- Argument 2: Object B
 -- Argument 3: OPTIONAL: The margin of error for facing(float). Default value: 0.2 radians
@@ -215,7 +215,7 @@ ObjectIsBehind(objectA, objectB[, marginOfError]); --  Get whether an object is 
 
 ### ObjectIsInfront
 ```lua
--- Return value: Int 
+-- Return value: Boolean 
 -- Argument 1: Object A
 -- Argument 2: Object B
 -- Argument 3: OPTIONAL: The margin of error for facing(float). Default value: 0.2 radians
@@ -224,10 +224,10 @@ ObjectIsInfront(objectA, objectB[, marginOfError]); --  Get whether an object is
 
 ### ObjectIsType
 ```lua
--- Return value: Int 
+-- Return value: Boolean 
 -- Argument 1: Object
 -- Argument 2: ObjectType
-ObjectIsType(object, objectType); --  Returns 1 if the object if the specified type
+ObjectIsType(object, objectType); --  Returns true if the object if the specified type
 ```
 
 ### ObjectField
@@ -372,9 +372,9 @@ CancelPendingSpell(); -- Cancels the pending AoE spell
 ## Hacks 
 ### IsHackEnabled
 ```lua
--- Return value: Int
+-- Return value: Boolean
 -- Argument 1: The name of the hack you wish to check the enabled status for (String)
-IsHackEnabled(name); -- Returns 1 if the specified hack is enabled.
+IsHackEnabled(name); -- Returns true if the specified hack is enabled.
 ```
 
 ### SetHackEnabled
@@ -463,8 +463,8 @@ OpenURL(url); -- Opens a webpage using the defaut browser.
 
 ### IsForeground
 ```lua
--- Return value: Int
-IsForeground(); -- Returns 1 if the game client is the foremost window.
+-- Return value: Boolean
+IsForeground(); -- Returns true if the game client is the foremost window.
 ```
 
 ----------------------------------------------------
