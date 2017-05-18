@@ -197,7 +197,7 @@ GetPositionBetweenObjects(objectA, objectB, dist); --  Returns X,Y,Z coordinates
 -- Return value: Int 
 -- Argument 1: Object A
 -- Argument 2: Object B
--- Argument 3: OPTIONAL: The margin of error for facing(float). Default value: 180 degrees
+-- Argument 3: OPTIONAL: The margin of error for facing(float). Default value: 3 radians
 ObjectIsFacing(objectA, objectB[, marginOfError]); --  Get whether an object is facing another.
 
 -- Available Aliases:
@@ -209,7 +209,7 @@ UnitIsFacing()
 -- Return value: Int 
 -- Argument 1: Object A
 -- Argument 2: Object B
--- Argument 3: OPTIONAL: The margin of error for facing(float). Default value: 180 degrees
+-- Argument 3: OPTIONAL: The margin of error for facing(float). Default value: 0.2 radians
 ObjectIsBehind(objectA, objectB[, marginOfError]); --  Get whether an object is behind another.
 ```
 
@@ -218,7 +218,7 @@ ObjectIsBehind(objectA, objectB[, marginOfError]); --  Get whether an object is 
 -- Return value: Int 
 -- Argument 1: Object A
 -- Argument 2: Object B
--- Argument 3: OPTIONAL: The margin of error for facing(float). Default value: 180 degrees
+-- Argument 3: OPTIONAL: The margin of error for facing(float). Default value: 0.2 radians
 ObjectIsInfront(objectA, objectB[, marginOfError]); --  Get whether an object is infront of another.
 ```
 
