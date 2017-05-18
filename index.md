@@ -348,6 +348,21 @@ Raycast();
 GetCameraPosition(); -- Get the camera position.
 ```
 
+### IsAoEPending
+```lua
+-- Return value: Boolean
+IsAoEPending(); -- Returns if a AoE spell is pending
+```
+
+### ClickPosition
+```lua
+-- Argument 1: The starting X coordinat (float)
+-- Argument 2: The starting Y coordinate (float)
+-- Argument 3: The starting Z coordinate (float)
+-- Argument 4: OPTIONAL: Should right click instead of left. Default value:  false (Boolean)
+ClickPosition(x, y, z[, Right]); -- Simulate a click at a position in the game-world.
+```
+
 ----------------------------------------------------
 ## Hacks 
 ### IsHackEnabled
