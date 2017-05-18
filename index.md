@@ -363,6 +363,11 @@ IsAoEPending(); -- Returns if a AoE spell is pending
 ClickPosition(x, y, z[, Right]); -- Simulate a click at a position in the game-world.
 ```
 
+### CancelPendingSpell
+```lua
+CancelPendingSpell(); -- Cancels the pending AoE spell
+```
+
 ----------------------------------------------------
 ## Hacks 
 ### IsHackEnabled
