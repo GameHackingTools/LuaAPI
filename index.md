@@ -201,7 +201,7 @@ GetPositionBetweenObjects(objectA, objectB, dist); --  Returns X,Y,Z coordinates
 ObjectIsFacing(objectA, objectB[, marginOfError]); --  Get whether an object is facing another.
 
 -- Available Aliases:
-UnitIsInfront()
+UnitIsFacing()
 ```
 
 ### ObjectIsBehind
