@@ -356,7 +356,7 @@ IsAoEPending(); -- Returns if a AoE spell is pending
 
 ### ClickPosition
 ```lua
--- Argument 1: The starting X coordinat (float)
+-- Argument 1: The starting X coordinate (float)
 -- Argument 2: The starting Y coordinate (float)
 -- Argument 3: The starting Z coordinate (float)
 -- Argument 4: OPTIONAL: Should right click instead of left. Default value:  false (Boolean)
@@ -368,6 +368,23 @@ ClickPosition(x, y, z[, Right]); -- Simulate a click at a position in the game-w
 CancelPendingSpell(); -- Cancels the pending AoE spell
 ```
 
+### WorldToScreen
+```lua
+-- Return value: The X and Y screen coordinates for the XYZ coordinates
+-- Argument 1: The X coordinate (float)
+-- Argument 2: The Y coordinate (float)
+-- Argument 3: The Z coordinate (float)
+WorldToScreen(x, y, z); -- Get the screen coordinates relative from World coordinates
+```
+
+### IsInFront
+```lua
+-- Return value: Boolean
+-- Argument 1: The X coordinate (float)
+-- Argument 2: The Y coordinate (float)
+-- Argument 3: The Z coordinate (float)
+IsInFront(x, y, z); -- Return whether the given coordinates are in front of WoW's camera
+```
 ----------------------------------------------------
 ## Hacks 
 ### IsHackEnabled
