@@ -449,6 +449,14 @@ GetToolkitDirectory();
 -- Return value: String
 GetWoWDirectory(); -- Returns the game client directory.
 ```
+
+### LoadScript
+```lua
+-- Return value: Any return values from the script
+-- Argument 1: Path of file to load (String)
+LoadScript(path); -- Runs an entire lua script
+```
+
 ----------------------------------------------------
 ## Scripts 
 We do not currently have a public API this section
