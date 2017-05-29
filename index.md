@@ -96,19 +96,18 @@ CurrentTarget();
 -- Argument 1: The Object
 ObjectName(object); --  Get the objects name from the Object Manager
 ```
+### ObjectID
+```lua
+-- Return value: String
+-- Argument 1: The Object
+ObjectID(object); --  Get the objects Entry ID
+```
 
 ### ObjectGUID
 ```lua
 -- Return value: String
 -- Argument 1: The Object
 ObjectGUID(object); --  Get the objects GUID from the Object Manager
-```
-
-### ObjectFormattedGUID
-```lua
--- Return value: String
--- Argument 1: The Object
-ObjectFormattedGUID(object); --  Get the objects GUID from the Object Manager
 ```
 
 ### ObjectScale
@@ -327,7 +326,7 @@ UnitUpdateModel(unit); --  Refreshes the model drawn for the supplied Unit. Call
 ### TraceLine
 ```lua
 -- Return value: The X, Y, and Z coordinates of the hit position, or nil, nil, nil if nothing was hit 
--- Argument 1: The starting X coordinat (float)
+-- Argument 1: The starting X coordinate (float)
 -- Argument 2: The starting Y coordinate (float)
 -- Argument 3: The starting Z coordinate (float)
 -- Argument 4: The ending X coordinate (float)
@@ -496,6 +495,57 @@ IsForeground(); -- Returns true if the game client is the foremost window.
 ## Interface
 We do not currently have a public API this section
 
+----------------------------------------------------
+## Math
+
+### GetDistanceBetweenPositions
+```lua
+-- Return value: float
+-- Argument 1: The starting X coordinate (float)
+-- Argument 2: The starting Y coordinate (float)
+-- Argument 3: The starting Z coordinate (float)
+-- Argument 4: The ending X coordinate (float)
+-- Argument 5: The ending Y coordinate (float)
+-- Argument 6: The ending Z coordinate (float)
+GetDistanceBetweenPositions(X, Y, Z, X2, Y2, Z2); -- Returns the distance between the two positions
+```
+
+### GetAnglesBetweenPositions
+```lua
+-- Return value: float
+-- Argument 1: The starting X coordinate (float)
+-- Argument 2: The starting Y coordinate (float)
+-- Argument 3: The starting Z coordinate (float)
+-- Argument 4: The ending X coordinate (float)
+-- Argument 5: The ending Y coordinate (float)
+-- Argument 6: The ending Z coordinate (float)
+GetAnglesBetweenPositions(X, Y, Z, X2, Y2, Z2); -- Returns the distance angle between the two positions
+```
+
+### GetPositionFromPosition
+```lua
+-- Return value: X, Y, Z (floats)
+-- Argument 1: The starting X coordinate (float)
+-- Argument 2: The starting Y coordinate (float)
+-- Argument 3: The starting Z coordinate (float)
+-- Argument 4: The distance required (float)
+-- Argument 5: The angle from the position (float)
+-- Argument 6: The pitch from the position (float)
+GetPositionFromPosition(X, Y, Z, dist, angle, pitch); -- Returns the X,Y,Z positions that are the specified distance away from starting coordinates
+```
+
+### GetPositionBetweenPositions
+```lua
+-- Return value: X, Y, Z (floats)
+-- Argument 1: The starting X coordinate (float)
+-- Argument 2: The starting Y coordinate (float)
+-- Argument 3: The starting Z coordinate (float)
+-- Argument 4: The ending X coordinate (float)
+-- Argument 5: The ending Y coordinate (float)
+-- Argument 6: The ending Z coordinate (float)
+-- Argument 7: The distance from starting coordinates (float)
+GetPositionBetweenPositions(X, Y, Z, X2, Y2, Z2, dist); -- Returns the X,Y,Z positions that are the specified distance away from starting coordinates while staying in line with the ending coordinates
+```
 
 ----------------------------------------------------
 ## Enums
@@ -583,10 +633,10 @@ Hacks = {
 }
 ```
 
-### ObjectType
+### ObjectTypes
 
 ```lua
-ObjectType = { 
+ObjectTypes = { 
   Object = 0, 
   Item = 1, 
   Container = 2, 
