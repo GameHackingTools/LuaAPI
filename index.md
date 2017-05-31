@@ -451,8 +451,8 @@ GetWoWDirectory(); -- Returns the game client directory.
 ### LoadScript
 ```lua
 -- Return value: Any return values from the script
--- Argument 1: Path of file to load (String)
-LoadScript(path); -- Runs an entire lua script
+-- Argument 1: the name of the script to load (including the file extension) (String)
+LoadScript(script); -- Runs an entire lua script
 ```
 
 ----------------------------------------------------
