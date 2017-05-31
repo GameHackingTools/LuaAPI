@@ -393,6 +393,7 @@ WorldToScreen(x, y, z); -- Get the screen coordinates relative from World coordi
 -- Argument 3: The Z coordinate (float)
 IsInFront(x, y, z); -- Return whether the given coordinates are in front of WoW's camera
 ```
+
 ----------------------------------------------------
 ## Hacks 
 ### IsHackEnabled
@@ -509,6 +510,12 @@ IsForeground(); -- Returns true if the game client is the foremost window.
 -- Return value: Spell Name (string)
 -- Argument 1: spellID (number)
 GetSpellName(spellID); -- Returns the spell name
+```
+
+### GetAspectRatio
+```lua
+-- Return value: The aspect ratio (number)
+GetAspectRatio(); -- Returns the aspect ratio
 ```
 
 ----------------------------------------------------
