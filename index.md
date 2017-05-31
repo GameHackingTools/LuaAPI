@@ -494,6 +494,13 @@ OpenURL(url); -- Opens a webpage using the defaut browser.
 IsForeground(); -- Returns true if the game client is the foremost window.
 ```
 
+### GetSpellName 
+```lua
+-- Return value: Spell Name (string)
+-- Argument 1: spellID (number)
+GetSpellName(spellID); -- Returns the spell name
+```
+
 ----------------------------------------------------
 ## Callbacks
 
@@ -567,15 +574,6 @@ GetPositionFromPosition(X, Y, Z, dist, angle, pitch); -- Returns the X,Y,Z posit
 -- Argument 6: The ending Z coordinate (float)
 -- Argument 7: The distance from starting coordinates (float)
 GetPositionBetweenPositions(X, Y, Z, X2, Y2, Z2, dist); -- Returns the X,Y,Z positions that are the specified distance away from starting coordinates while staying in line with the ending coordinates
-```
-----------------------------------------------------
-## Miscellaneous
-
-### GetSpellName 
-```lua
--- Return value: Spell Name (string)
--- Argument 1: spellID (number)
-GetSpellName(spellID); -- Returns the spell name
 ```
 
 ----------------------------------------------------
