@@ -11,6 +11,7 @@ If there is a function you would like adding please submit a Feature Request [on
 -- Return value: Null
 StopFalling(); -- Instantly stops the player falling, Fall damage is calculated as if you landed on a hard surface.
 ```
+
 ### GetMaximumClimbAngle ![PremiumOnly](https://gamehacking.tools/api/premiumbadge.jpg)
 ```lua
 -- Return value: Int
@@ -35,6 +36,12 @@ FaceDirection(radians); -- Sets the player rotation to the specified radian. Man
 -- Return value: Null
 -- Argument 1: Radian value of the direction to face
 FaceDirection(radians); -- Sets the player rotation to the specified radian. Manual movement or SendMovementUpdate() is required to notify the server of this change.
+```
+
+### GetDistanceFallen 
+```lua
+-- Return value: The total distance fallen since the player last started to fall or 0 if not currently falling (number)
+GetDistanceFallen(); -- Returns the distance fallen
 ```
 
 ----------------------------------------------------
