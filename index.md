@@ -154,7 +154,6 @@ ObjectTypeMask(object); --  Returns the typemask of the object
 
 ### ObjectInteract
 ```lua
--- Return value: Null 
 -- Argument 1: The Object
 ObjectInteract(object); --  Interacts the the specifed object
 
@@ -492,8 +491,27 @@ IsForeground(); -- Returns true if the game client is the foremost window.
 ```
 
 ----------------------------------------------------
-## Interface
-We do not currently have a public API this section
+## Callbacks
+
+### AddFrameCallback 
+```lua
+-- Argument 1: Callback (function)
+AddFrameCallback(callback); -- Adds the specified callback and calls it every frame
+```
+
+### AddTimerCallback  
+```lua
+-- Argument 1: The number of seconds to wait between calls (number)
+-- Argument 2: Callback (function)
+AddTimerCallback(seconds, callback); -- Adds the specfied callback and after the specified duration
+```
+
+### AddEventCallback   
+```lua
+-- Argument 1: The wow event (http://wowprogramming.com/docs/events) (string)
+-- Argument 2: Callback (function)
+AddEventCallback (eventname, callback); -- Adds the specfied callback that will be called every time the specified event is called. It should be noted that the callback will be called with the event arguments.
+```
 
 ----------------------------------------------------
 ## Math
@@ -545,6 +563,15 @@ GetPositionFromPosition(X, Y, Z, dist, angle, pitch); -- Returns the X,Y,Z posit
 -- Argument 6: The ending Z coordinate (float)
 -- Argument 7: The distance from starting coordinates (float)
 GetPositionBetweenPositions(X, Y, Z, X2, Y2, Z2, dist); -- Returns the X,Y,Z positions that are the specified distance away from starting coordinates while staying in line with the ending coordinates
+```
+----------------------------------------------------
+## Miscellaneous
+
+### GetSpellName 
+```lua
+-- Return value: Spell Name (string)
+-- Argument 1: spellID (number)
+GetSpellName(spellID); -- Returns the spell name
 ```
 
 ----------------------------------------------------
