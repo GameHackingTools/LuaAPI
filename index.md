@@ -448,16 +448,20 @@ GetToolkitDirectory();
 GetWoWDirectory(); -- Returns the game client directory.
 ```
 
+----------------------------------------------------
+## Scripts 
+
 ### LoadScript
 ```lua
 -- Return value: Any return values from the script
 -- Argument 1: the name of the script to load (including the file extension) (String)
 LoadScript(script); -- Runs an entire lua script
 ```
-
-----------------------------------------------------
-## Scripts 
-We do not currently have a public API this section
+### GetScriptName 
+```lua
+-- Return value: The script file name (string)
+GetScriptName (); -- Get the file name of the currently executing script
+```
 
 ----------------------------------------------------
 ## Miscellaneous 
