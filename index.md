@@ -46,6 +46,11 @@ GetDistanceFallen(); -- Returns the distance fallen
 
 ----------------------------------------------------
 ## Object Manager
+### HasObjectManagerUpdated
+```lua
+-- Return value: Boolean
+HasObjectManagerUpdated(); -- Returns if the in game objects available to the API have changed. Note: this is VERY useful to keep FPS high as you can cache a table of objects in your script and only update when required. 
+```
 ### GetObjectCount
 ```lua
 -- Return value: Int
@@ -425,14 +430,14 @@ SetHackEnabled(name, bool); -- Enables or Disables the specified
 ## File 
 ### GetDirectoryFiles
 ```lua
--- Return value: String[]
+-- Return value: Table of strings
 -- Argument 1: Path of directory (String) Note: Directory path should be formatted like "C:\\GameHackingTools\\"
 GetDirectoryFiles(path); -- Returns the file path to each file found in the specified directory.
 ```
 
 ### GetSubdirectories
 ```lua
--- Return value: String[]
+-- Return value: Table of strings
 -- Argument 1: Path of directory (String) Note: Directory path should be formatted like "C:\\GameHackingTools\\"
 GetSubdirectories(path); -- Returns the path to each subdirectory found in the specified directory.
 ```
