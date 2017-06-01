@@ -79,6 +79,13 @@ GetObjectWithPointer(pointer); -- Get an object in the object manager from its p
 GetObjectWithGUID(guid); -- Get an object in the object manager from its GUID.
 ```
 
+### GetObjectsOfType
+```lua
+-- Return value: Table of Objects of the specified types
+-- Argument 1: ObjectType
+GetObjectsOfType(ObjectType); -- Returns a table of objects of the specified type
+```
+
 ### GetLocalPlayer
 ```lua
 -- Return value: The Player Object
