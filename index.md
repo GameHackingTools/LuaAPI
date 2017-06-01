@@ -50,6 +50,9 @@ GetDistanceFallen(); -- Returns the distance fallen
 ```lua
 -- Return value: Int
 GetObjectCount(); -- Get the number of objects in the object manager.
+
+-- Available Aliases:
+ObjectCount();
 ```
 
 ### GetObjectWithIndex
