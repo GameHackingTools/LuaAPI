@@ -117,9 +117,6 @@ CurrentTarget();
 -- Return value: String
 -- Argument 1: The Object
 ObjectName(object); --  Get the objects name from the Object Manager
-
--- Available Aliases:
-UnitName();
 ```
 ### ObjectID
 ```lua
