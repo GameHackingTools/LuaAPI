@@ -68,6 +68,7 @@ GetObjectWithIndex(index); -- Get an object in the object manager from using its
 
 -- Available Aliases:
 GetObjectFromIndex();
+ObjectWithIndex();
 ```
 
 ### GetObjectWithPointer
@@ -165,6 +166,9 @@ ObjectFacing(object); --  Returns the direction the object is facing
 -- Return value: Int (ObjectType)
 -- Argument 1: The Object
 ObjectTypeFlags(object); --  Returns the type of the object
+
+-- Available Aliases:
+ObjectType();
 ```
 
 ### ObjectTypeMask
@@ -479,6 +483,9 @@ GetWoWDirectory(); -- Returns the game client directory.
 -- Return value: Any return values from the script
 -- Argument 1: the name of the script to load (including the file extension) (String)
 LoadScript(script); -- Runs an entire lua script
+
+-- Available Aliases:
+/load <filename> -- Usable only from the game chat window
 ```
 ### GetScriptName 
 ```lua
