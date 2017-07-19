@@ -76,6 +76,20 @@ ObjectWithIndex();
 -- Return value: The Object
 -- Argument 1: Object Pointer formatted at Hex String. 0x123ABC
 GetObjectWithPointer(pointer); -- Get an object in the object manager from its pointer.
+
+-- Available Aliases:
+ObjectWithPointer();
+```
+
+### GetObjectWithToken
+```lua
+-- Return value: The Object
+-- Argument 1: A object token. Player, Target, Mouseover, etc.
+GetObjectWithToken(pointer); -- Get an object in the object manager from its pointer.
+
+-- Available Aliases:
+ObjectWithToken();
+GetObjectFromToken();
 ```
 
 ### GetObjectWithGUID
@@ -385,6 +399,9 @@ IsAoEPending(); -- Returns if a AoE spell is pending
 -- Argument 3: The starting Z coordinate (float)
 -- Argument 4: OPTIONAL: Should right click instead of left. Default value:  false (Boolean)
 ClickPosition(x, y, z[, Right]); -- Simulate a click at a position in the game-world.
+
+-- Available Aliases:
+CastAtPosition();
 ```
 
 ### CancelPendingSpell
