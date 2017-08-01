@@ -127,12 +127,20 @@ CurrentTarget();
 
 ----------------------------------------------------
 ## Object 
+### ObjectPointer
+```lua
+-- Return value: String
+-- Argument 1: The Object or Token
+ObjectName(object); --  Get the objects name from the Object Manager
+```
+
 ### ObjectName
 ```lua
 -- Return value: String
 -- Argument 1: The Object
 ObjectName(object); --  Get the objects name from the Object Manager
 ```
+
 ### ObjectID
 ```lua
 -- Return value: String
@@ -504,6 +512,7 @@ LoadScript(script); -- Runs an entire lua script
 -- Available Aliases:
 /load <filename> -- Usable only from the game chat window
 ```
+
 ### GetScriptName 
 ```lua
 -- Return value: The script file name (string)
@@ -552,6 +561,13 @@ GetSpellName(spellID); -- Returns the spell name
 ```lua
 -- Return value: The aspect ratio (number)
 GetAspectRatio(); -- Returns the aspect ratio
+```
+
+### GetKeyState
+```lua
+-- Return value: IsDown(Boolean), IsToggled(Boolean)
+-- Argument 1: Virtual Key Code (https://msdn.microsoft.com/en-us/library/windows/desktop/dd375731(v=vs.85).aspx)
+GetKeyState(); -- Gets the key states
 ```
 
 ----------------------------------------------------
