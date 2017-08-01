@@ -131,7 +131,7 @@ CurrentTarget();
 ```lua
 -- Return value: String
 -- Argument 1: The Object or Token
-ObjectName(object); --  Get the objects name from the Object Manager
+ObjectPointer(object); --  Get the objects pointer from the Object Manager
 ```
 
 ### ObjectName
