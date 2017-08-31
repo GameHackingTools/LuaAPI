@@ -132,6 +132,10 @@ CurrentTarget();
 -- Return value: String
 -- Argument 1: The Object or Token
 ObjectPointer(object); --  Get the objects pointer from the Object Manager
+
+-- Available Aliases:
+ObjectIdentifier();
+ObjectBaseAddress();
 ```
 
 ### ObjectName
@@ -167,6 +171,9 @@ ObjectScale(object); --  Get the objects scale
 -- Return value: Boolean
 -- Argument 1: The Object
 ObjectExists(object); --  Returns true if the specified objects still exists in the Object Manager
+
+-- Available Aliases:
+ObjectIsVisible();
 ```
 
 ### ObjectPosition
@@ -492,12 +499,16 @@ Toolkit_GetDirectory(); -- Returns the GameHackingTools Launcher directory.
 -- Available Aliases:
 GetFireHackDirectory();
 GetToolkitDirectory();
+GetHackDirectory();
 ```
 
 ### GetWoWDirectory
 ```lua
 -- Return value: String
 GetWoWDirectory(); -- Returns the game client directory.
+
+-- Available Aliases:
+GetGameDirectory();
 ```
 
 ----------------------------------------------------
@@ -747,6 +758,9 @@ ObjectTypes = {
   SceneObject = 9, 
   Conversation = 10
 }
+
+-- Available Aliases:
+ObjectType
 ```
 
 ### MemoryType
@@ -769,6 +783,10 @@ MemoryType = {
   UIntPtr = 13,
   GUID = 14
 }
+
+-- Available Aliases:
+Type
+Types
 ```
 
 ### HitFlags
@@ -787,4 +805,7 @@ HitFlags = {
   LineOfSight = 0x100111,
   SpellLoS = 0x100010 
 }
+
+-- Available Aliases:
+HitFlag
 ```
